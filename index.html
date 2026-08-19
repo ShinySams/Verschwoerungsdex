@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verschwörungsdex</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f2f2f2;
+    }
+
+    header {
+      background: #111821;
+      border-bottom: 1px solid #263241;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #aeb8c4;
+    }
+
+    nav {
+      margin-top: 22px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 35px 20px 60px;
+    }
+
+    .intro {
+      background: #111821;
+      border: 1px solid #263241;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 35px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+    }
+
+    .akten {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .akte {
+      display: block;
+      background: #121922;
+      border: 1px solid #273342;
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: 0.2s;
+    }
+
+    .akte:hover {
+      transform: translateY(-3px);
+      border-color: #61728a;
+      background: #16202b;
+    }
+
+    .nummer {
+      color: #9aa7b5;
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+
+    .akte h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.35rem;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #202a36;
+      color: #cbd4de;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      border-top: 1px solid #263241;
+      color: #8f9aa7;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85rem;
+    }
+
+    .warnung {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #8f9aa7;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>VERSCHWÖRUNGSDEX</h1>
+  <p>Die offizielle Ermittlungsdatenbank des einzig wahren Verschwörungsdex.</p>
+
+  <nav>
+    <a href="index.html">DEX</a>
+    <a href="richtlinien.html">ERMITTLUNGSRICHTLINIEN</a>
+    <a href="togedenahrungs.html">TOGEDENAHRUNGS</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Ermittlungsakten</h2>
+    <p>
+      Willkommen in der offiziellen Datenbank des Verschwörungsdex.
+      Hier werden laufende, abgeschlossene und aus wirtschaftlichen Gründen
+      unnötig verlängerte Ermittlungen archiviert.
+    </p>
+    <p>
+      <strong>Bei Beschwerden gilt §4.</strong>
+    </p>
+  </section>
+
+  <section class="akten">
+
+    <a class="akte" href="001.html">
+      <div class="nummer">AKTE #001</div>
+      <h2>iPh(i)one</h2>
+      <p>Ermittlungen rund um Phione und seine möglicherweise verschwundene Form.</p>
+      <span class="status">Abgeschlossen</span>
+    </a>
+
+    <a class="akte" href="002.html">
+      <div class="nummer">AKTE #002</div>
+      <h2>AUxie</h2>
+      <p>Selfe, Augen, Darkrai und eine unangenehm große Zahl offener Fragen.</p>
+      <span class="status">Abgeschlossen</span>
+    </a>
+
+    <a class="akte" href="003.html">
+      <div class="nummer">AKTE #003</div>
+      <h2>Volcan(i)gone</h2>
+      <p>Was stimmt mit Heatran nicht?</p>
+      <span class="status">Abgeschlossen</span>
+    </a>
+
+    <a class="akte" href="004.html">
+      <div class="nummer">AKTE #004</div>
+      <h2>Dialkia</h2>
+      <p>Raum, Zeit und die bislang unerforschten Essensgeistformen.</p>
+      <span class="status">Abgeschlossen</span>
+    </a>
+
+    <a class="akte" href="005.html">
+      <div class="nummer">AKTE #005</div>
+      <h2>Gencisse</h2>
+      <p>Genesect, Module und eine Person mit verdächtig vielen Identitäten.</p>
+      <span class="status">Ermittlungen laufen</span>
+    </a>
+
+    <div class="akte">
+      <div class="nummer">AKTE #006</div>
+      <h2>UNTER VERSCHLUSS</h2>
+      <p>Diese Ermittlungsakte wurde noch nicht zur Veröffentlichung freigegeben.</p>
+      <span class="status">In Bearbeitung</span>
+    </div>
+
+  </section>
+
+  <p class="warnung">
+    Sämtliche Inhalte sind mit Humor zu verstehen.
+    Für weitere Informationen gelten die offiziellen Ermittlungsrichtlinien.
+  </p>
+
+</main>
+
+<footer>
+  © Verschwörungsdex – Alle Rechte vorbehalten. Auch jene, die uns vermutlich gar nicht zustehen.
+</footer>
+
+</body>
+</html>
