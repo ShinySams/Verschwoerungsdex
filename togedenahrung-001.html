@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TogedeNahrung #001 – TogedeNahrung</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f2f2f2;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111821;
+      border-bottom: 1px solid #263241;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: #aeb8c4;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 35px 20px 60px;
+    }
+
+    .akte-kopf,
+    .inhalt,
+    .eingestellt {
+      background: #111821;
+      border: 1px solid #263241;
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 30px;
+    }
+
+    .aktennummer {
+      color: #9aa7b5;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .akte-kopf h2 {
+      margin: 5px 0 15px;
+      font-size: 2rem;
+    }
+
+    .info {
+      margin: 8px 0;
+    }
+
+    /* STATUS-LÄMPCHEN */
+
+    .lampen {
+      display: inline-flex;
+      gap: 6px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .lampe {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #2a313b;
+      border: 1px solid #3b4653;
+      display: inline-block;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #202a36;
+      color: #d1d8e0;
+      font-size: 0.85rem;
+    }
+
+    /* EINGESTELLT */
+
+    .eingestellt {
+      text-align: center;
+      border: 1px solid #4b5663;
+    }
+
+    .eingestellt h2 {
+      margin-top: 0;
+      letter-spacing: 2px;
+    }
+
+    .eingestellt .paragraph {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .inhalt h2 {
+      margin-top: 0;
+    }
+
+    .inhalt p {
+      margin: 18px 0;
+    }
+
+    .navigation-unten {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .navigation-unten a {
+      color: white;
+      text-decoration: none;
+      background: #161f2a;
+      border: 1px solid #263241;
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+
+    footer {
+      border-top: 1px solid #263241;
+      color: #8f9aa7;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #aeb8c4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+
+<body>
+
+<header>
+
+  <h1>TOGEDENAHRUNG</h1>
+
+  <p>
+    Archiv eingestellter Ermittlungen des Verschwörungsdex
+  </p>
+
+  <nav>
+    <a href="index.html">DEX</a>
+    <a href="richtlinien.html">ERMITTLUNGSRICHTLINIEN</a>
+    <a href="togedenahrungs.html">TOGEDENAHRUNGS</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+  <!-- AKTENINFORMATIONEN -->
+
+  <section class="akte-kopf">
+
+    <div class="aktennummer">
+      TOGEDENAHRUNG #001
+    </div>
+
+    <h2>TogedeNahrung</h2>
+
+    <p class="info">
+
+      <strong>Status:</strong>
+
+      <span class="status">
+
+        <span class="lampen">
+          <span class="lampe"></span>
+          <span class="lampe"></span>
+          <span class="lampe"></span>
+        </span>
+
+        TogedeNahrung
+
+      </span>
+
+    </p>
+
+    <p class="info">
+      <strong>Verdächtiger:</strong>
+      Togedemaru
+    </p>
+
+    <p class="info">
+      <strong>Mutmaßliches Opfer:</strong>
+      Morpeko
+    </p>
+
+    <p class="info">
+      <strong>Handfestigkeit:</strong>
+      Nicht ausreichend
+    </p>
+
+  </section>
+
+
+  <!-- §13 -->
+
+  <section class="eingestellt">
+
+    <h2>ERMITTLUNG EINGESTELLT</h2>
+
+    <p>
+      Dieses Verfahren wurde gemäß
+      <strong>§13 der offiziellen Ermittlungsrichtlinien</strong>
+      eingestellt.
+    </p>
+
+    <p class="paragraph">
+      Die Theorie ist nicht falsch.
+      Sie ist lediglich momentan zu schlecht.
+    </p>
+
+  </section>
+
+
+  <!-- URSPRÜNGLICHE ERMITTLUNG -->
+
+  <article class="inhalt">
+
+    <h2>Archivierte Ermittlungsunterlagen</h2>
+
+    <p>
+      Togedemaru wird häufig als Pikachu-Klon der siebten Generation betrachtet.
+    </p>
+
+    <p>
+      <strong>Das ist unmöglich.</strong>
+    </p>
+
+    <p>
+      Dieser Platz ist bereits vergeben.
+    </p>
+
+    <p>
+      <strong>An Mimigma.</strong>
+    </p>
+
+    <p>
+      Damit bleibt nur eine Frage:
+    </p>
+
+    <p>
+      <strong>Was stimmt mit Togedemaru nicht?</strong>
+    </p>
+
+    <p>
+      Auf den ersten Blick scheint die Antwort offensichtlich:
+    </p>
+
+    <p>
+      <strong>Es ist fett.</strong>
+    </p>
+
+    <p>
+      Doch der Verschwörungsdex gibt sich nicht mit oberflächlichen
+      Erklärungen zufrieden.
+    </p>
+
+    <p>
+      <strong>Warum ist Togedemaru fett?</strong>
+    </p>
+
+    <p>
+      Was isst es?
+    </p>
+
+    <p>
+      Wie viel davon isst es?
+    </p>
+
+    <p>
+      Und vor allem:
+    </p>
+
+    <p>
+      <strong>Ist das der Grund, weshalb es kein Pikachu-Klon ist?</strong>
+    </p>
+
+    <p>
+      Vielleicht ist es fett, weil es nicht nur seine eigene Nahrung konsumiert.
+    </p>
+
+    <p>
+      Vielleicht haben wir bisher lediglich das
+      <strong>Opfer</strong> übersehen.
+    </p>
+
+    <p>
+      <strong>Morpeko.</strong>
+    </p>
+
+    <p>
+      Morpekos Körper benötigt ständig Nahrung, um elektrische Energie zu
+      erzeugen. Sinkt sein Energievorrat, wird es hungrig und wechselt in sein
+      <strong>Kohldampfmuster</strong>, wodurch es sogar den Unlicht-Typ annimmt.
+    </p>
+
+    <p>
+      Doch warum verliert Morpeko überhaupt derart schnell Energie?
+    </p>
+
+    <p>
+      Gleichzeitig existiert ein anderes Elektro-Pokémon, das selbst nur
+      begrenzt Elektrizität erzeugen kann und deshalb Energie
+      <strong>von anderen Elektro-Pokémon aufnimmt.</strong>
+    </p>
+
+    <p>
+      <strong>Togedemaru.</strong>
+    </p>
+
+    <p>
+      Das eine Pokémon braucht ständig neue Energie.
+    </p>
+
+    <p>
+      <strong>Das andere stiehlt sie.</strong>
+    </p>
+
+    <p>
+      Das eine wird hungrig.
+    </p>
+
+    <p>
+      <strong>Das andere wird rund.</strong>
+    </p>
+
+    <p>
+      Vielleicht ist Morpekos Kohldampfmuster also keine natürliche Eigenheit.
+    </p>
+
+    <p>
+      <strong>
+        Vielleicht hat es einfach Hunger, weil Togedemaru ihm ständig
+        das Essen klaut.
+      </strong>
+    </p>
+
+    <p>
+      Und damit nicht genug: Togedemaru nimmt nicht nur
+      <strong>Morpekos Beeren</strong>, sondern kann sich auch noch an der
+      Elektrizität anderer Elektro-Pokémon bedienen.
+    </p>
+
+    <p>
+      Morpeko verliert also seine <strong>Nahrung und seine Energie.</strong>
+    </p>
+
+    <p>
+      Togedemaru bekommt <strong>beides.</strong>
+    </p>
+
+    <p>
+      Morpeko wird hungrig und sein <strong>Kohldampfmuster</strong>
+      kommt zum Vorschein.
+    </p>
+
+    <p>
+      <strong>Togedemaru wird rund.</strong>
+    </p>
+
+  </article>
+
+
+  <!-- ABSCHLUSS -->
+
+  <section class="eingestellt">
+
+    <h2>ERGEBNIS DER ERMITTLUNG</h2>
+
+    <p>
+      Trotz intensiver Ermittlungen konnte kein ausreichend
+      semi-handfester Beweis dafür gefunden werden, dass Togedemaru
+      tatsächlich Morpekos Nahrung oder Energie stiehlt.
+    </p>
+
+    <p>
+      Der Zusammenhang zwischen beiden Pokémon beruht damit auf einer
+      Beweislage, die selbst den Qualitätsanforderungen des
+      Verschwörungsdex nicht genügt.
+    </p>
+
+    <p>
+      <strong>
+        Das Verfahren wird gemäß §13 als TogedeNahrung archiviert.
+      </strong>
+    </p>
+
+  </section>
+
+
+  <!-- NAVIGATION -->
+
+  <div class="navigation-unten">
+
+    <a href="togedenahrungs.html">
+      ← Zurück zum TogedeNahrungs-Archiv
+    </a>
+
+    <a href="index.html">
+      Zum Verschwörungsdex
+    </a>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <p>
+    © Verschwörungsdex – Alle Rechte vorbehalten.
+    Auch jene, die uns vermutlich gar nicht zustehen.
+  </p>
+
+  <p>
+    <a href="impressum.html">Impressum</a>
+    |
+    <a href="datenschutz.html">Datenschutz</a>
+  </p>
+
+</footer>
+
+</body>
+</html>
