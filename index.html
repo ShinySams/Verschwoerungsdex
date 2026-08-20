@@ -6,6 +6,29 @@
   <title>Verschwörungsdex</title>
 
   <style>
+    .lampen {
+  display: inline-flex;
+  gap: 6px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.lampe {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #2a313b;
+  border: 1px solid #3b4653;
+  display: inline-block;
+}
+
+.lampe.an {
+  background: #8fd3ff;
+  border-color: #c7eaff;
+  box-shadow:
+    0 0 5px #8fd3ff,
+    0 0 10px rgba(143, 211, 255, 0.55);
+}
     .youtube-button {
   display: inline-block;
   margin-top: 10px;
