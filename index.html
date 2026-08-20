@@ -121,7 +121,36 @@
       font-size: 0.9rem;
       color: #8f9aa7;
       text-align: center;
-    }
+    }.social-links {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  background: #202a36;
+  border: 1px solid #364355;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.social-links a:hover {
+  background: #2a3746;
+}
+
+@media (max-width: 700px) {
+  .social-links {
+    position: static;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+}
   </style>
 </head>
 
@@ -130,7 +159,7 @@
 <header>
 
   <div class="social-links">
-    <a href="ShinySams - YouTube" target="_blank">
+    <a href="https://www.youtube.com/@ShinySams" target="_blank">
       YouTube
     </a>
 
