@@ -12,7 +12,7 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #0b0f14;
       color: #f2f2f2;
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     header {
@@ -24,11 +24,12 @@
 
     header h1 {
       margin: 0;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
     }
 
     header p {
       color: #aeb8c4;
+      margin-bottom: 0;
     }
 
     nav {
@@ -36,9 +37,9 @@
     }
 
     nav a {
-      color: #ffffff;
+      color: white;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 10px;
       font-weight: bold;
     }
 
@@ -47,64 +48,186 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       padding: 35px 20px 60px;
     }
 
-    .intro {
+    /* ========================= */
+    /* ARCHIV-KOPF               */
+    /* ========================= */
+
+    .archiv-kopf {
       background: #111821;
-      border: 1px solid #263241;
+      border: 1px solid #364355;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .archiv-code {
+      color: #8f9aa7;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .archiv-kopf h2 {
+      margin: 12px 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .archiv-kopf p {
+      max-width: 700px;
+      margin: 15px auto;
+    }
+
+    /* ========================= */
+    /* LÄMPCHEN                  */
+    /* ========================= */
+
+    .lampen-gross {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .lampe-gross {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #20262e;
+      border: 2px solid #3b4653;
+      box-shadow: inset 0 0 5px #000;
+    }
+
+    .lampen {
+      display: inline-flex;
+      gap: 6px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .lampe {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #20262e;
+      border: 1px solid #3b4653;
+      display: inline-block;
+    }
+
+    /* ========================= */
+    /* §13                       */
+    /* ========================= */
+
+    .paragraph {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 7px 13px;
+      border: 1px solid #4b5663;
+      border-radius: 6px;
+      color: #aeb8c4;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .motto {
+      margin-top: 25px !important;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    /* ========================= */
+    /* TRENNER / ÜBERSCHRIFT     */
+    /* ========================= */
+
+    .archiv-titel {
+      margin-top: 45px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #263241;
+    }
+
+    .archiv-titel h2 {
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .archiv-titel p {
+      margin: 5px 0 0;
+      color: #8f9aa7;
+    }
+
+    /* ========================= */
+    /* TOGEDENAHRUNGS-KARTEN     */
+    /* ========================= */
+
+    .akte {
+      display: block;
+      background: #111821;
+      border: 1px solid #364355;
       border-radius: 12px;
       padding: 24px;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
+      color: white;
+      text-decoration: none;
+      transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        background 0.15s ease;
     }
 
-    .intro h2 {
-      margin-top: 0;
-    }
-
-    .archiv {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
-
-    .togedenahrung {
-      background: #121922;
-      border: 1px solid #273342;
-      border-radius: 12px;
-      padding: 20px;
+    .akte:hover {
+      transform: translateY(-2px);
+      border-color: #596879;
+      background: #151d27;
     }
 
     .nummer {
+      color: #8f9aa7;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    .akte h2 {
+      margin: 4px 0 10px;
+      font-size: 1.6rem;
+    }
+
+    .beschreibung {
+      color: #b8c1cc;
+      margin-bottom: 20px;
+    }
+
+    .statuszeile {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      border-top: 1px solid #263241;
+      padding-top: 15px;
+      margin-top: 15px;
       color: #9aa7b5;
       font-size: 0.85rem;
-      margin-bottom: 6px;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    .togedenahrung h2 {
-      margin: 0 0 10px;
-    }
-
-    .status {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      background: #202a36;
-      color: #cbd4de;
+    .oeffnen {
+      margin-left: auto;
+      color: #d1d8e0;
       font-size: 0.8rem;
     }
 
-    .leer {
-      background: #111821;
-      border: 1px dashed #3a4655;
-      border-radius: 12px;
-      padding: 30px;
-      text-align: center;
-      color: #9aa7b5;
-    }
+    /* ========================= */
+    /* FOOTER                    */
+    /* ========================= */
 
     footer {
       border-top: 1px solid #263241;
@@ -113,12 +236,49 @@
       padding: 25px;
       font-size: 0.85rem;
     }
+
+    footer a {
+      color: #aeb8c4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* ========================= */
+    /* HANDY                     */
+    /* ========================= */
+
+    @media (max-width: 650px) {
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+      }
+
+      .archiv-kopf {
+        padding: 22px 18px;
+      }
+
+      .archiv-kopf h2 {
+        font-size: 1.6rem;
+      }
+
+      .oeffnen {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
   </style>
 </head>
+
 
 <body>
 
 <header>
+
   <h1>TOGEDENAHRUNGS</h1>
 
   <p>
@@ -130,86 +290,154 @@
     <a href="richtlinien.html">ERMITTLUNGSRICHTLINIEN</a>
     <a href="togedenahrungs.html">TOGEDENAHRUNGS</a>
   </nav>
+
 </header>
+
 
 <main>
 
-  <section class="intro">
+  <!-- ========================= -->
+  <!-- ARCHIV-EINLEITUNG         -->
+  <!-- ========================= -->
+
+  <section class="archiv-kopf">
+
+    <div class="archiv-code">
+      VERSCHWÖRUNGSDEX // ARCHIV
+    </div>
+
+    <div class="lampen-gross">
+      <span class="lampe-gross"></span>
+      <span class="lampe-gross"></span>
+      <span class="lampe-gross"></span>
+    </div>
+
+    <div class="paragraph">
+      §13 // ERMITTLUNGEN EINGESTELLT
+    </div>
 
     <h2>Was ist eine TogedeNahrung?</h2>
 
     <p>
-      Gemäß §13 der offiziellen Ermittlungsrichtlinien gelten Verschwörungen,
-      deren Ermittlungen aufgrund mangelnder Beweise, fehlender Zusammenhänge
-      oder allgemeiner Sinnlosigkeit eingestellt wurden, offiziell als
-      <strong>TogedeNahrungs</strong>.
+      Gemäß §13 der offiziellen Ermittlungsrichtlinien gelten
+      Verschwörungen, deren Ermittlungen aufgrund mangelnder Beweise,
+      fehlender Zusammenhänge oder allgemeiner Sinnlosigkeit eingestellt
+      wurden, offiziell als <strong>TogedeNahrungs</strong>.
     </p>
 
     <p>
-      Eine Aufnahme in dieses Archiv bedeutet ausdrücklich
-      <strong>nicht</strong>, dass die Theorie falsch ist.
+      Eine Aufnahme in dieses Archiv bedeutet ausdrücklich nicht,
+      dass die Theorie falsch ist.
     </p>
 
-    <p>
-      <strong>Sie ist lediglich momentan zu schlecht.</strong>
+    <p class="motto">
+      Sie ist lediglich momentan zu schlecht.
     </p>
 
   </section>
 
-  <section class="archiv">
 
-    <!--
-      HIER KÖNNEN SPÄTER TOGEDENAHRUNGS EINGEFÜGT WERDEN.
+  <!-- ========================= -->
+  <!-- ARCHIV                    -->
+  <!-- ========================= -->
 
-      Beispiel:
+  <div class="archiv-titel">
 
-      <div class="togedenahrung">
-        <div class="nummer">TOGEDENAHRUNG #001</div>
-        <h2>Name der Theorie</h2>
+    <h2>Eingestellte Ermittlungen</h2>
 
-        <p>
-          Kurze Beschreibung der eingestellten Ermittlungen.
-        </p>
+    <p>
+      Sämtliche gemäß §13 archivierten Fälle.
+    </p>
 
-        <p>
-          <strong>Grund der Einstellung:</strong>
-          Akuter Beweismangel.
-        </p>
+  </div>
 
-        <span class="status">Verfahren eingestellt</span>
+
+  <!-- ========================= -->
+  <!-- TOGEDENAHRUNG #001        -->
+  <!-- ========================= -->
+
+  <a class="akte" href="togedenahrung-001.html">
+
+    <div class="nummer">
+      TOGEDENAHRUNG #001
+    </div>
+
+    <h2>TogedeNahrung</h2>
+
+    <p class="beschreibung">
+      Togedemaru, Morpeko und eine äußerst fragwürdige Nahrungskette.
+    </p>
+
+    <div class="statuszeile">
+
+      <span class="lampen">
+        <span class="lampe"></span>
+        <span class="lampe"></span>
+        <span class="lampe"></span>
+      </span>
+
+      ERMITTLUNG EINGESTELLT // §13
+
+      <span class="oeffnen">
+        AKTE ÖFFNEN →
+      </span>
+
+    </div>
+
+  </a>
+
+
+  <!--
+    ZUKÜNFTIGE TOGEDENAHRUNG:
+
+    <a class="akte" href="togedenahrung-002.html">
+
+      <div class="nummer">
+        TOGEDENAHRUNG #002
       </div>
 
-    -->
+      <h2>TEXT NAME</h2>
 
-  </section>
+      <p class="beschreibung">
+        TEXT BESCHREIBUNG
+      </p>
 
- <a class="akte" href="togedenahrung-001.html">
-  <div class="nummer">TOGEDENAHRUNG #001</div>
-  <h2>TogedeNahrung</h2>
-  <p>Togedemaru, Morpeko und eine äußerst fragwürdige Nahrungskette.</p>
+      <div class="statuszeile">
 
-  <span class="status">
-    <span class="lampen">
-      <span class="lampe"></span>
-      <span class="lampe"></span>
-      <span class="lampe"></span>
-    </span>
-    TogedeNahrung
-  </span>
-</a>
+        <span class="lampen">
+          <span class="lampe"></span>
+          <span class="lampe"></span>
+          <span class="lampe"></span>
+        </span>
 
-  </section>
+        ERMITTLUNG EINGESTELLT // §13
+
+        <span class="oeffnen">
+          AKTE ÖFFNEN →
+        </span>
+
+      </div>
+
+    </a>
+  -->
 
 </main>
 
+
 <footer>
-  © Verschwörungsdex – Alle Rechte vorbehalten.
-  Auch jene, die uns vermutlich gar nicht zustehen.
+
+  <p>
+    © Verschwörungsdex – Alle Rechte vorbehalten.
+    Auch jene, die uns vermutlich gar nicht zustehen.
+  </p>
+
+  <p>
+    <a href="impressum.html">Impressum</a>
+    |
+    <a href="datenschutz.html">Datenschutz</a>
+  </p>
+
 </footer>
-<p>
-  <a href="impressum.html">Impressum</a>
-  |
-  <a href="datenschutz.html">Datenschutz</a>
-</p>
+
 </body>
 </html>
